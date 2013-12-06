@@ -1,0 +1,20 @@
+{
+  "name": "Loki",
+  "description": "Kneel before me...",
+  "launch_path": "/index.html",
+  "icons": {
+    "128": "/icon-128.png"
+  },
+  "developer": {
+    "name": "Soumya Deb [:Debloper]",
+    "url": "http://debs.io/"
+  },
+  "type": "privileged",
+  "permissions": {
+    "contacts": {
+      "description": "Required for autocompletion in the share screen",
+      "access": "readwrite"
+      }
+  },
+  "default_locale": "en"
+}
