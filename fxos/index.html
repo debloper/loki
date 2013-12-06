@@ -13,29 +13,7 @@
 <body>
 
 	<button id="sceptre">Kneel!</button>
-
-	<script>
-
-	var permission = navigator.mozContacts.getAll({});
-
-	document.getElementById("sceptre").addEventListener("click", function (event) {
-		var contacts = navigator.mozContacts.getAll({});
-
-		contacts.onsuccess = function () {
-			if (contacts.result) {
-				console.log(contacts.result.name.join(" "));
-				contacts.continue();
-			} else {
-				console.log("Muhahaha!");
-			}
-		};
-
-		contacts.onerror = function() {
-			console.log("This usually works! :-/");
-		};
-	})
-
-	</script>
+	<script src="script.js"></script>
 
 </body>
 
