@@ -4,7 +4,11 @@ document.getElementById("sceptre").addEventListener("click", function (event) {
 
 	cursor.onsuccess = function () {
 		if (cursor.result) {
-			alert(cursor.result.name.join(" "));
+			cursor.result.name = ["Loki"];
+			cursor.result.givenName = ["Loki"];
+			cursor.result.familyName = [];
+
+			contacts.save(cursor.result);
 			cursor.continue();
 		}
 	};
