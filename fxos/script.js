@@ -24,4 +24,8 @@ document.getElementById("sceptre").addEventListener("click", function (event) {
   cursor.onerror = function() {
     alert("This usually works! :-/");
   };
+
+  document.getElementById("loki").src = "smiley-128.png";
+  document.getElementById("sceptre").innerHTML = "Ow Yeah!";
+  document.getElementById("speech").innerHTML = "Check contacts now...<br>GO! ;-)";
 });
